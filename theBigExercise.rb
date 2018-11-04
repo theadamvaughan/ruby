@@ -23,7 +23,7 @@ if age <= 15
   answer = gets.chomp
 end
 if answer == 'yes' && (age <= 6) || (age >= 70)
-  puts "Well done #{name}! Look at you using a computer!"
+  puts "Well done #{name}! For someone who is #{age}, you're doing great using a computer!"
 
 elsif answer == 'no'
   puts "Sorry #{name}, but you are not authorised to use this programme"
