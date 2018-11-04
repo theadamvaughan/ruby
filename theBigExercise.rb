@@ -1,7 +1,5 @@
 require 'date'
 
-today = DateTime.now
-
 puts 'Can I have your full name?'
 name = gets.chomp
 
@@ -28,5 +26,9 @@ if answer == 'yes' && (age <= 6) || (age >= 70)
 elsif answer == 'no'
   puts "Sorry #{name}, but you are not authorised to use this programme"
 else
-  puts "Your name is #{name} and you are #{age} years old"
+  puts "Your name is #{name}, as you were born on #{day}/#{month}/#{year}, that makes you #{age} years old"
+end
+
+if day == today.day && month == today.month
+  puts "Oh, and happy birthday!!"
 end
